@@ -1,5 +1,5 @@
 # neural_style
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](http://dswami.freevar.com/git_icons/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Supported Python version](http://dswami.freevar.com/git_icons/pyversions.svg)](https://www.python.org/downloads/)
 
 An implementation of [neural style][paper] in TensorFlow.<br> 
