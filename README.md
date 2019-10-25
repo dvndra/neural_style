@@ -47,11 +47,11 @@ the style transfer should be. Lower values mean that style transfer of a finer f
 will be favored over style transfer of a more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-![original image](images/sample_1.jpg)
-![--learning-rate 1.0](output/sample_1_1_p.png)
-![--learning-rate 10.0](output/sample_1_10_p.png)
+![original image](images/sample_1.jpg =100x100)
+![--learning-rate 1.0](output/sample_1_1_p.png =100x100)
+![--learning-rate 10.0](output/sample_1_10_p.png =100x100)
 
-(**left**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
+(**left**: 1.0 - original image; **center**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
 
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
