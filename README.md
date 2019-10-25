@@ -58,7 +58,7 @@ Default value for style_weight and content_weight is 40 and 10 respectively. Ple
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_2.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_10.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_100.png" width="250" height ="250">
 
-(**left**: my image at Mt.Fuji during summer; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored over content)<br><br>
+(**left**: my image at Mt.Fuji summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored over content)<br><br>
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
