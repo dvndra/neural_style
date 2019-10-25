@@ -53,12 +53,11 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 
 (**left**: my image at heritage site; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)<br><br>
 
-`--style-weight` or `--content-weight` command line argument could be supplied to explicitly set how close the generated image to the style and content images. Higher values mean that generated image is closer to the corresponding style/content.<br> 
-Default value for style_weight and content_weight is 40 and 10 respectively. Please find below images generated with variation in style_weight:
+`--style-weight` or `--content-weight` command line argument could be supplied to explicitly set how close the generated image to the style and content images. Higher values mean that generated image is closer to the corresponding style/ content. Default value for style_weight and content_weight is 40 and 10 respectively. Please find below images generated with variation in style_weight:
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_2.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_10.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_100.png" width="250" height ="250">
 
-(**left**: my image at Mt.Fuji summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored over content)<br><br>
+(**left**: my image at Mt.Fuji in summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored)<br><br>
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
