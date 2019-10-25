@@ -3,6 +3,8 @@
 [![Supported Python version](http://dswami.freevar.com/git_icons/pyversions.svg)](https://www.python.org/downloads/)
 
 NEURAL STYLE IN TENSORFLOW
+An implementation of [neural style][paper] in TensorFlow.
+[paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 
 ## Running
 
