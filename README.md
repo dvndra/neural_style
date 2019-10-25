@@ -51,13 +51,13 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_1.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_1_1_p.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_1_10_p.png" width="250" height ="250">
 
-(**left**: original image of mine; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)<br><br>
+(**left**: my image at heritage site; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)<br><br>
 
-`--style-weight` or `--content-weight` command line argument could be supplied to explicitly set how close the generated image to the style and content images. Higher values mean that generated image is closer to the corresponding style/content. Default value is for style_weight is 40 and content_weight is 10. Please find below an example demonstrating the same:
+`--style-weight` or `--content-weight` command line argument could be supplied to explicitly set how close the generated image to the style and content images. Higher values mean that generated image is closer to the corresponding style/content. Default value is for style_weight is 40 and content_weight is 10. Somewhat extreme examples of what you can achieve:
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_2.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_10.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_100.png" width="250" height ="250">
 
-(**left**: original image of mine; **center**: 1.0 - content favored; **right**: 100.0 - style favored)<br><br>
+(**left**: my image at Mt.Fuji; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored over content)<br><br>
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
