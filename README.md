@@ -31,13 +31,13 @@ Optional:
 --output-folder : path to store output/checkpoint images (default: ./output/)
 --width : width of generated images (default: same as content image)
 --height : height of generated images (default: same as content image)
---content-weight : Beta (default: 40)
+--content-weight : Beta (default:40)
 --style-weight : Alpha (default:10)
---style-layer-weight-factor : style layer weight increase factor (default : 1)
---iterations : total iterations (default: 200)
+--style-layer-weight-factor : style layer weight increase factor (default:1)
+--iterations : total iterations (default:200)
 --print-iterations : print statistics every # iterations (default:20)
 --checkpoint-iterations : save generated image every # iterations (default:20)
---learning-rate : learning rate in Adam Optimizer
+--learning-rate : learning rate in Adam Optimizer (default:2.0)
 ```
 **Requirements**
 * [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option. 
