@@ -59,5 +59,11 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 
 (**left**: my image at Mt.Fuji in summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored)<br><br>
 
+`--style-layer-weight-factor` parameter adjusts the granularity of style transfer application. Lower values favors style transfer of finer features over more coarse features, and vice versa. Default value is 1.0 - all layers treated equally. Thus, it gives results similar to what can be achieved with tweaking learning rate. An extreme example acieved for this parameter:
+
+&nbsp;&nbsp;&nbsp;<img src = "/images/sample_3.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_3_02.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_3_2.png" width="250" height ="250">
+
+(**left**: my image at Gangtok, India; **center**: 0.2 - coarser features style transfer; **right**: 2.0 - finer features style transfer)<br><br>
+
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
