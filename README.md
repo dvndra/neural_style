@@ -20,6 +20,10 @@ Use `--checkpoint-iterations` to save checkpoint images.
 
 ***Note***: Random noises are added to content image to generate initial image for training. Thus, the training starts with very low content error and very high style error. Style error will then decrease on expense of content error to minimize total error. You can start seeing interesting results from 100+ iterations in most settings. 
 
+**Requirements**
+* [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option. 
+* You can install Python dependencies using `pip install -r requirements.txt`.
+
 **Parameters:**
 ```
 Required:
@@ -39,9 +43,6 @@ Optional:
 --checkpoint-iterations : save generated image every # iterations (default:20)
 --learning-rate : learning rate in Adam Optimizer (default:2.0)
 ```
-**Requirements**
-* [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option. 
-* You can install Python dependencies using `pip install -r requirements.txt`.
 
 ## Hyperparameters Modification
 `--learning-rate` command line argument could be used to adjust to what extent
