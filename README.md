@@ -11,6 +11,13 @@ To run this project, pass in the minimum required arguments (contentFile and sty
 ```
 python neural_style.py --content contentFile --style styleFile
 ```
+Use `--width` and `--heigth` to set height and width of generated images (default same as that of content image).
+
+Use `--iterations` to change the number of iterations (default 200).  For a 640×640 pixel content file, 200 iterations take 70 seconds on a Tesla K40, 15 seconds on GTX 1080 Ti, or 20 minutes on Macbook Pro'18 (2.3GHz quad-core Intel Core i5). 
+
+Use `--checkpoint-iterations` to save checkpoint images.
+
+
 **Parameters:**
 ```
 Required:
