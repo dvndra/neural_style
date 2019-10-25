@@ -42,14 +42,14 @@ Optional:
 * You can install Python dependencies using `pip install -r requirements.txt`.
 
 ## Hyperparameters Modification
-`--learning-rate` command line argument could be used to adjust how "crude"
-the style transfer should be. Lower values mean that style transfer of a finer features
-will be favored over style transfer of a more coarse features, and vice versa. Default
+`--learning-rate` command line argument could be used to adjust to what extent
+the style transfer should be applied to the content. Higher values mean that style transfer of finer features
+will be favored over style transfer of more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-<img src = "/images/sample_1.jpg" width="200" height ="200">  <img src = "/output/sample_1_1_p.png" width="200" height ="200">   <img src = "/output/sample_1_10_p.png" width="200" height ="200">
+<img src = "/images/sample_1.jpg" width="200" height ="200">       <img src = "/output/sample_1_1_p.png" width="200" height ="200">        <img src = "/output/sample_1_10_p.png" width="200" height ="200">
 
-(**left**: 1.0 - original image; **center**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
+(**left**: 1.0 - original image of mine; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
