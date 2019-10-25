@@ -21,7 +21,7 @@ Use `--checkpoint-iterations` to save checkpoint images.
 ***Note***: Random noises are added to content image to generate initial image for training. Thus, the training starts with very low content error and very high style error. Style error will then decrease on expense of content error to minimize total error. You can start seeing interesting results from 100+ iterations in most settings. 
 
 **Requirements**
-* [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option. 
+* [Pre-trained VGG network][vgg] (MD5 `106118b7cf60435e6d8e04f6a6dc3657`) - put it in the project directory, or specify its location using the `--vgg` option. 
 * You can install Python dependencies using `pip install -r requirements.txt`.
 
 **Parameters:**
@@ -67,4 +67,4 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 (**left**: my image at Gangtok, India; **center**: 0.2 - coarser features style transfer; **right**: 2.0 - finer features style transfer) Style image used: van_gogh.jpg<br><br>
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
-[net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
+[vgg]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
