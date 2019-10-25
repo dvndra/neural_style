@@ -47,7 +47,7 @@ the style transfer should be applied to the content. Higher values mean that sty
 will be favored over style transfer of more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-<img src = "/images/sample_1.jpg" width="250" height ="250" margin="10">  <img src = "/output/sample_1_1_p.png" width="250" height ="250"margin="10">   <img src = "/output/sample_1_10_p.png" width="250" height ="250"margin="10">
+<img src = "/images/sample_1.jpg" width="250" height ="250">      <img src = "/output/sample_1_1_p.png" width="250" height ="250">       <img src = "/output/sample_1_10_p.png" width="250" height ="250">
 
 (**left**: 1.0 - original image of mine; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)
 
