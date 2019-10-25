@@ -2,7 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Supported Python version](http://dswami.freevar.com/git_icons/pyversions.svg)](https://www.python.org/downloads/)
 
-An implementation of [neural style][paper] in TensorFlow. Special thanks to MatConvNet team for using their pretrained VGG 19 model.<br>
+An implementation of [neural style][paper] in TensorFlow.<br> 
+Special thanks to MatConvNet team for using their pretrained VGG 19 model in neural style implementation.<br>
 
 ## Running
 
