@@ -31,7 +31,7 @@ Required:
 --content : content image
 
 Optional:
---vgg : path to pretrained vgg weights (default: './imagenet-vgg-verydeep-19.mat')
+--vgg : path to pretrained vgg weights (default: ./imagenet-vgg-verydeep-19.mat)
 --output-folder : path to store output/checkpoint images (default: ./output/)
 --width : width of generated images (default: same as content image)
 --height : height of generated images (default: same as content image)
