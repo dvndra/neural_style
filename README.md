@@ -47,9 +47,7 @@ the style transfer should be. Lower values mean that style transfer of a finer f
 will be favored over style transfer of a more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-<img src = "/images/sample_1.jpg" width="300" height ="300">
-<img src = "/output/sample_1_1_p.png" width="300" height ="300">
-<img src = "/output/sample_1_10_p.png" width="300" height ="300">
+<img src = "/images/sample_1.jpg" width="300" height ="300"><img src = "/output/sample_1_1_p.png" width="300" height ="300"><img src = "/output/sample_1_10_p.png" width="300" height ="300">
 
 (**left**: 1.0 - original image; **center**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
 
