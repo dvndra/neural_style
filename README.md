@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Supported Python version](http://dswami.freevar.com/git_icons/pyversions.svg)](https://www.python.org/downloads/)
 
-An implementation of [neural style][paper] in TensorFlow. <br>
+An implementation of [neural style][paper] in TensorFlow. Special thanks to MatConvNet team for using their pretrained VGG 19 model.<br>
 
 ## Running
 
@@ -13,7 +13,7 @@ python neural_style.py --content contentFile --style styleFile
 ```
 Use `--width` and `--heigth` to set height and width of generated images (default same as that of content image).
 
-Use `--iterations` to change the number of iterations (default 200).  For a 640×640 pixel content file, 200 iterations take 70 seconds on a Tesla K40, 15 seconds on GTX 1080 Ti, or 20 minutes on Macbook Pro'18 (2.3GHz quad-core Intel Core i5). 
+Use `--iterations` to change the number of iterations (default 200).  For a 640×640 pixel content file, 200 iterations take 70 seconds on a Tesla K40, 15 seconds on GTX 1080 Ti, or 20 minutes on Macbook Pro'18 (2.3GHz quad-core Intel i5). 
 
 Use `--checkpoint-iterations` to save checkpoint images.
 
@@ -38,8 +38,21 @@ Optional:
 --learning-rate : learning rate in Adam Optimizer
 ```
 **Requirements**
-* [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option.
+* [Pre-trained VGG network][net] - put it in the top level of this repository, or specify its location using the `--vgg` option. 
 * You can install Python dependencies using `pip install -r requirements.txt`.
+
+## Hyperparameters Modification
+`--learning-rate` command line argument could be used to adjust how "crude"
+the style transfer should be. Lower values mean that style transfer of a finer features
+will be favored over style transfer of a more coarse features, and vice versa. Default
+value is 2.0. Somewhat extreme examples of what you can achieve:
+
+![original image](images/sample_1.jpg)
+![--learning-rate 1.0](output/sample_1_1_p.png)
+![--learning-rate 10.0](output/sample_1_10_p.png)
+
+(**left**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
+
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
