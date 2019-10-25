@@ -47,7 +47,7 @@ the style transfer should be. Lower values mean that style transfer of a finer f
 will be favored over style transfer of a more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-![original image](images/sample_1.jpg =100x100)
+< img src = 'images/sample_1.jpg' width='100' height ='100') alt='original image'>
 ![--learning-rate 1.0](output/sample_1_1_p.png =100x100)
 ![--learning-rate 10.0](output/sample_1_10_p.png =100x100)
 
