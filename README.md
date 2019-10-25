@@ -57,7 +57,7 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_2.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_10.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_2_beta_100.png" width="250" height ="250">
 
-(**left**: my image at Mt.Fuji in summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored) Style image used: van_gogh.jpg<br><br>
+(**left**: my image at Mt.Fuji in summer'16; **center**: 10.0 - content favored over style; **right**: 100.0 - style favored)<br> Style image used: van_gogh.jpg<br><br>
 
 `--style-layer-weight-factor` parameter adjusts the granularity of style transfer application. Lower values favors style transfer of finer features over more coarse features, and vice versa. Default value is 1.0 - all layers treated equally. Thus, it gives results similar to what can be achieved with tweaking learning rate. An extreme example acieved for this parameter:
 
