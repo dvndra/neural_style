@@ -47,11 +47,9 @@ the style transfer should be. Lower values mean that style transfer of a finer f
 will be favored over style transfer of a more coarse features, and vice versa. Default
 value is 2.0. Somewhat extreme examples of what you can achieve:
 
-<img src = "https://github.com/dvndra/neural_style/tree/master/images/sample_1.jpg" width='100' height ='100' />
+<img src = "https://github.com/dvndra/neural_style/tree/master/images/sample_1.jpg" width='200' height ='200' />
 
 (**left**: 1.0 - original image; **center**: 1.0 - finer features style transfer; **right**: 10.0 - coarser features style transfer)
-
-<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="200" height="400" />
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
