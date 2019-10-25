@@ -11,7 +11,7 @@ To run this project, pass in the minimum required arguments (contentFile and sty
 ```
 python neural_style.py --content contentFile --style styleFile
 ```
-**Parameters:
+**Parameters:**
 ```
 Required:
 --style : style image
