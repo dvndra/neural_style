@@ -3,7 +3,7 @@
 [![Supported Python version](http://dswami.freevar.com/git_icons/pyversions.svg)](https://www.python.org/downloads/)
 
 An implementation of [neural style][paper] in TensorFlow.<br> 
-Special thanks to MatConvNet team for using their pretrained VGG 19 model in neural style implementation.<br>
+Special thanks to MatConvNet team for using their pretrained VGG 19 model in this implementation.<br>
 
 ## Running
 
@@ -18,6 +18,7 @@ Use `--iterations` to change the number of iterations (default 200).  For a 640Ã
 
 Use `--checkpoint-iterations` to save checkpoint images.
 
+***Note***: Random noises are added to content image to generate initial image for training. Thus, the training starts with very low content error and very high style error. Style error will then decrease on expense of content error to minimize total error. You can start seeing interesting results from 100+ iterations in most settings. 
 
 **Parameters:**
 ```
@@ -50,7 +51,10 @@ value is 2.0. Somewhat extreme examples of what you can achieve:
 
 &nbsp;&nbsp;&nbsp;<img src = "/images/sample_1.jpg" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_1_1_p.png" width="250" height ="250">&nbsp;&nbsp;&nbsp;<img src = "/output/sample_1_10_p.png" width="250" height ="250">
 
-(**left**: 1.0 - original image of mine; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)
+(**left**: 1.0 - original image of mine; **center**: 1.0 - coarser features style transfer; **right**: 10.0 - finer features style transfer)<br><br>
+
+`--style-weight` or `--content-weight` command line argument could be supplied to explicitly set how close the generated image to the style and content images. Higher values mean that generated image is closer to the corresponding style/content. Default value is for style_weight is 40 and content_weight is 10. Somewhat extreme examples of what you can achieve:
+
 
 [paper]: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf
 [net]: http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat
